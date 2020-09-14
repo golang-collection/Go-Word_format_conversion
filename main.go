@@ -1,4 +1,9 @@
-package Go_Word_format_conversion
+package main
+
+import (
+	"Go-Word_format_conversion/cmd"
+	"log"
+)
 
 /**
 * @Author: super
@@ -6,3 +11,9 @@ package Go_Word_format_conversion
 * @Description:
 **/
 
+func main() {
+	err := cmd.Execute()
+	if err != nil{
+		log.Fatalf("cmd.Execute err: %v", err)
+	}
+}
